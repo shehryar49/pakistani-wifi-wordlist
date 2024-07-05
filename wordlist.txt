@@ -232,3 +232,6 @@ moeed123
 12345678
 Abbas123
 ehab16532
+11223344
+name@gmail.com
+platform@name
