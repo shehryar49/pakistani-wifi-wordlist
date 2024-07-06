@@ -1,0 +1,20 @@
+#!/usr/local/bin/zuko
+
+var lines = readlines(open("wordlist.txt","r"))
+var new = []
+
+foreach(var line: lines)
+{
+    var count = 0
+    foreach(var dup: new)
+    {
+        if(dup == line)
+            count += 1
+    }
+    if(count == 0)
+        new.push(line)
+}
+
+var f = open("wordlist.txt","w")
+writelines(new,f)
+close(f)
